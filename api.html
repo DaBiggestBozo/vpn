@@ -24,13 +24,14 @@
 
 	<body>
 
-		<div>Click here to continue</div>
+		<div id="link" onClick = "clickFunction()">Click here to continue</div>
 
 		<script type="text/javascript">"use strict";
 
 (() => {
 
 	document.onclick = () => {
+		
 
 		const win = window.open(void 0, "_blank", "");
 
