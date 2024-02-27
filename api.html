@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8" />
+
+		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
+		<meta http-equiv="Referrer-Policy" content="no-referrer" />
+
+		<meta name="referrer" content="no-referrer" />
+
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+		<link rel="icon" type="image/x-icon" href="https://www.google.com/favicon.ico" />
+
+		<link rel="stylesheet" type="text/css" href="data:text/css;base64,Ym9keSwgZW1iZWQsIGlmcmFtZSB7Cglwb3NpdGlvbjogYWJzb2x1dGU7CglkaXNwbGF5OiBibG9jazsKCXdpZHRoOiAxMDAlOwoJaGVpZ2h0OiAxMDAlOwoJbWFyZ2luOiAwcHg7CglwYWRkaW5nOiAwcHg7Cglib3JkZXI6IG5vbmU7CglvdmVyZmxvdzogaGlkZGVuOwp9Cg==" />
+
+		<title>Exporting</title>
+
+	</head>
+
+	<body>
+
+		<div>Click here to continue</div>
+
+		<script type="text/javascript">"use strict";
+
+(() => {
+
+	document.onclick = () => {
+
+		const win = window.open(void 0, "_blank", "");
+
+		if (win == null) {
+
+			document.body.innerHTML = "Error: Popup windows are blocked by your browser. Please allow popups and click here to retry.";
+
+			return;
+
+		}
+
+		win.focus();
+
+
+
+		const doc = win.document;
+
+		doc.documentElement.replaceWith(document.documentElement);
+
+		doc.body.innerHTML = "<embed type=\"text/plain\" width=\"1024\" height=\"768\" src=\"https://dndbeyond.com/\" />";
+
+		doc.title = "DnD Beyond";
+
+	};
+
+})();
+
+		</script>
+
+	</body>
+
+</html>
