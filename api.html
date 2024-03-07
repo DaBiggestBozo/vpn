@@ -24,14 +24,13 @@
 
 	<body>
 
-		<div id="link" onClick = "open()">Click here to continue</div>
+		<div>Click here to continue</div>
 
 		<script type="text/javascript">"use strict";
 
 (() => {
 
-	function open() {
-		
+	document.onclick = () => {
 
 		const win = window.open(void 0, "_blank", "");
 
@@ -45,23 +44,25 @@
 
 		win.focus();
 
-	}:
+
 
 		const doc = win.document;
 
 		doc.documentElement.replaceWith(document.documentElement);
 
-		doc.body.innerHTML = "<embed type=\"text/plain\" width=\"1024\" height=\"768\" src=\"https://dndbeyond.com/\" />";
+		doc.body.innerHTML = "<embed type=\"text/plain\" width=\"1024\" height=\"768\" src=\"https://bing.com/\" />";
 
-		doc.title = "{title}";
+		doc.title = "Bing";
 
+	};
 
 })();
 
 		</script>
-  <label for="fname">Display Title:</label>
-  <input type="text" id="title" name="title"><br><br>
 
 	</body>
 
 </html>
+
+<label for="fname">Display Title:</label>
+<input type="text" id="title" name="title"><br><br>
